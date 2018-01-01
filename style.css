@@ -132,11 +132,13 @@ a {
   bottom: 5%;
 }
 
-@media screen and (max-width: 768px) {
-
-  .btn {
+@media screen and (max-width: 2160px) {
+  .box {
     font-size: 110%;
     padding: 7px 15px;
   }
-
+  
+  a {
+    font-size: 150%;
+  }
 }
