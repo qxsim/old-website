@@ -1,35 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-  
+<!DOCTYPE HTML>
+
+<html>
 	<head>
 		<title>Qasim Nawaz | This is my personal website</title>
-		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-
+	
 	<body>
-    	<section class="intro">
-			<div class="inner">
-        		<div class="content">
-          			<p>
-            			<div class="box">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="box">
               				<div class="inner_box">
-              					<h4>q a s i m</h4>
+              					<div class="name" data-hover="n a w a z">q a s i m</div>
               				</div>
             			</div>
-          			</p>
-          			<p>
-          				<b>
-          					<i class="container">under construction</i>
-          				</b>
-         			</p>
-        			<a href="mailto:hello@itsqas.im">
-        				<i class="fa fa-envelope" style="font-size:48px;color:black"></i>
-        			</a>
-        		</div>
-      		</div>
-    	</section>
-	</body>
+						<div class="content">
+							<div class="inner">
+								<h1>Hello! i'm qasim</h1>
+								<p>1st year computer science student @ the university of birmingham </br> developer, click <a href="#projects">here</a> to see more.</br>designer</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#aboutme">About Me</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
 
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About Me -->
+							<article id="aboutme">
+								<section id="four" class="wrapper style1 special fade-up">
+
+									<div class="container">
+										<header class="major">
+											<h2>about me</h2>
+										</header>
+											<div class="box alt">
+												<div class="row uniform">
+													<section class="4u$ 6u(medium) 12u$(xsmall)">
+														<i class="fab fa-java"></i>
+														<h3>Java</h3>
+														<p>I am proficient in Java, having used it to create a multitide of different complex applications</p>
+													</section>
+													<section class="4u 6u(medium) 12u$(xsmall)">
+														<i class="fab fa-python"></i>
+														<h3>Python</h3>
+														<p>I'm learning how to program in Python, and love how it can be utlilized in many different applications.</p>
+													</section>
+													<section class="4u 6u(medium) 12u$(xsmall)">
+														<i class="fas fa-file-code"></i>
+														<h3>OCaml</h3>
+														<p>I have working knowledge of the functional aspects of OCaml, being able to design exhaustive and efficient algorithms for a wide range of uses.</p>
+													</section>
+													<section class="4u 6u(medium) 12u$(xsmall)">
+														<i class="fab fa-html5"></i>
+														<h3>HTML/CSS</h3>
+														<p>I use HTML and CSS to create fast and fluid websites, that are as beautiful as they are functional.</p>
+													</section>
+													<section class="4u 6u$(medium) 12u$(xsmall)">
+														<i class="fas fa-microchip"></i>
+														<h3>Hardware</h3>
+														<p>I love experimenting with hardware, notable with Arduino and Raspberry Pi.</p>
+													</section>
+													<section class="4u 6u(medium) 12u$(xsmall)">
+														<i class="fas fa-robot"></i>
+														<h3>Robotics</h3>
+														<p>I have experience building and programming robots, using leJOS firmware on NXT-based systems.</p>
+													</section>
+                               						 <section class="4u 6u$(medium) 12u$(xsmall)">
+														<i class="fas fa-code"></i>
+														<h3>Hackathons!</h3>
+														<p>I love taking part in hackathons, and will take part in helping to organise them next year.</p>
+													</section>
+													<section class="4u$ 6u$(medium) 12u$(xsmall)">
+														<span class="icon alt major fa-plane"></span>
+														<h3>Travel</h3>
+													<p>I'm always up for a new adventure! I love visiting new places and experiencing new cultures.</p>
+													</section>
+												</div>
+											</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Projects -->
+							<article id="projects">
+								<header class="major">
+									<h2>my projects</h2>
+								</header>
+
+								<h3>Messaging System</h3>
+								<p>Designed and built a multi-threaded, fully-featured messaging system.</br>
+								Used various methods to deliver a coherent solution, including using concurrency.</br>
+								Features include login system, group chats, message traversal and deletion, message storage.</p>
+
+								<h3>Message Decryptor</h3>
+								<p>Designed and built a message decryption system, with a fast and fluid GUI.</br>
+								Offered multiple means of decryption using different algorithms, that solve the problem with
+varying degrees of speed and accuracy, with each offering its own costs and benefits.</br>
+								Developed GUI from scratch using the widely-used MVC model.</p>
+
+								<h3>Word Prediction System</h3>
+								<p>Designed and built a word prediction system, using a predefined dictionary of words, and
+constructing a trie data structure to hold 250,000+ words.</br>
+								Designed efficient and powerful algorithms to traverse this vast data structure, to calculate a word prediction, given a specific input representing a prefix.
+</br>
+								Used J-Unit testing to ensure correctness of all the algorithms used in the solution.</p>
+
+								<h3>Robot Warehouse</h3>
+								<p>Worked as part of a small team to design and build a large-scale multi-robot system that can
+complete a designated set of given jobs in the most efficient way, maximising productivity.</br>
+								Various highly advanced AI methods were used such as A* search, Bayesian Networks etc, in order to aid the robots in selecting and distributing jobs to complete the given set in the shortest amount of time.</br>
+								Implemented communication methods, so the robots were able to ‘speak’ to other robots, helping them all keep track of current tasks, and to select jobs based on what other robots are currently doing, as well as, keeping out of the way of other robots to avoid collisions.</p>
+
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/17jjos0UFcsus2wzgLr3JEzZL7SOBPqLE9XwUWv1oTHU/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="entry.353898823" id="entry.353898823" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="entry.710593648" id="entry.710593648" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="entry.1997677886" id="entry.1997677886" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+								<script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script>
+								<script type="text/javascript">
+								$('#gform').on('submit', function(e) {
+  									$('#gform *').fadeOut(0);
+  									$('#gform').prepend('Your submission has been processed...');
+  								});
+								</script>
+
+								<ul class="icons">
+									<li><a href="https://github.com/qxsim" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://linkedin.com/in/qnawaz" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:hello@itsqas.im" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2018 Qasim Nawaz</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
