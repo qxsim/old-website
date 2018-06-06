@@ -1220,115 +1220,6 @@
 				display: none;
 			}
 
-		#header .box{
-			font-family: 'Lato', sans-serif;
-			font-size: 760%;
-			text-transform: uppercase;
-			position: absolute;
-			top: 15%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 1000px;
-			height: 150px;
-			box-sizing: border-box;
-			padding: 3px;
-		}
-
-			#header .box:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -50%;
-				width: 50%;
-				height: 100%;
-				transition: .5s;
-			}
-
-			#header .box:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: -1%;
-				width: 50%;
-				height: 100%;
-				transition: .5s;
-				z-index: 10;
-			}
-
-		#header .inner_box {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			overflow: hidden;
-		}
-
-			#header .inner_box:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -50%;
-				width: 50%;
-				height: 100%;
-				background: #262626;
-				transition: .5s;
-				opacity: 0.4;
-			}
-
-			#header .inner_box:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: -50%;
-				width: 50%;
-				height: 100%;
-				background: #262626;
-				transition: .5s;
-				z-index: 11;
-				opacity: 0.4;
-			}
-
-		#header .box:hover:before {
-			left: 0;
-		}
-
-		#header .box:hover:after {
-			right: 0;
-		}
-
-		#header .box:hover .inner_box:before {
-			left: 0;
-		}		
-
-		#header .box:hover .inner_box:after {
-			right: 0;
-		}
-
-		#header .name {
-			position: absolute;
-			top: 50%;
-			font-weight: 100;
-			font-size: 4.5rem;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			color: #fff;
-			z-index: 100;
-			margin: 0;
-			padding: 0;
-			letter-spacing: 3px;
-		}
-
-		#header .box:hover .name {
-			font-size: 0;
-		}
-
-		#header .box:hover .name:after {	
-			content: attr(data-hover);
-			font-size: 4.5rem;
-			color: #C6C6C6;
-			transition: 0.5s;
-		}
-
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
@@ -1359,7 +1250,7 @@
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
-				line-height: 2;
+				line-height: 0.5;
 			}
 
 		#header nav ul {
