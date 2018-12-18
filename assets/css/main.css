@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Lato:400');
 @import url('https://fonts.googleapis.com/css?family=Lato:900');
 
@@ -118,7 +119,7 @@
 
 	body, input, select, textarea {
 		color: #000000;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: "Lato", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -153,7 +154,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
-		font-weight: 600;
+		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
