@@ -1,12 +1,176 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width'>
-    <link rel='stylesheet' href='style.css' type='text/css'>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qasim Nawaz</title>
-  </head>
-  <body>
-    <iframe src='https://web.qasimnawaz.repl.run/'></iframe>
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="fontawesome-v5.13.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:0.5s;">about</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:0.5s;">contact</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:0.5s;">projects</a>
+    <div id="middle" class="animated fadeIn" style="animation-delay:0s;">
+        <h1>qasim nawaz.</h1>
+        <h2>software developer / tech enthusiast</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showcontact()">contact</a>
+            <a onclick="showwork()">projects</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:0.6s;"><a class="social" href="https://github.com/qxsim"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:0.6s;"><a class="social" href="https://www.linkedin.com/in/qnawaz/"><i class="fab fa-linkedin-in"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:0.6s;"><a class="social" href="doc/my_resume.pdf"><i class="far fa-file-alt"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects.</h1>
+        <section id="proj-block">
+            <h2>Sentiment Analysis on Tweets Using Document Embeddings</h2>
+            <ul>   
+                <li>This is my final-year project (dissertation) which was an investigation into the various methods I could use to classify tweets by their sentiment.</li>
+                <li>I trained word vector-based, and paragraph vector-based models on a dataset consisting of 1.6 million tweets, in conjunction with various classifiers in order to find the best performing method in which to obtain the calculated sentiment of unseen tweets.</li>
+                <li>I designed and implemented all the various document representations, as well as the classifiers which included Logistic Regression, Cosine Similarity, Linear Discriminant Analysis, and multiple different forms of Neural Networks.</li>
+                <li>In the best case, I obtained an accuracy of 79.6%, using a very specific document vector, coupled with a Neural Network classifier.</li>
+            </ul>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Keras</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Gensim</div>
+                <div><i class="fas fa-circle"></i>&nbsp;NLTK</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Pandas</div>
+                <div><i class="fas fa-circle"></i>&nbsp;NumPy</div>
+                <div><i class="fas fa-circle"></i>&nbsp;TensorFlow</div>
+            </div>
+            <button class="btn_one" onclick="window.location.href='index.html';">read the paper</button>
+            <button class="btn_one" onclick="window.location.href='https://github.com/qxsim';">see the code</button>
+        </section>
+        <section id="proj-block">
+            <h2>Pathfinder</h2>
+            <ul>   
+                <li>I built and designed a ReactJS web application that visualizes various pathfinding algorithms.</li>
+                <li>I implemented Dijkstra’s algorithm, A* search, Breadth-first search, and Depth-first Search, with plans to add further pathfinding algorithms.</li>
+            </ul>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML/CSS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;ReactJS</div>
+            </div>
+            <button class="btn_one" onclick="window.location.href='index.html';">try it</button>
+            <button class="btn_one">see the code</button>
+        </section>
+        <section id="proj-block">
+            <h2>Sorter</h2>
+            <ul>   
+                <li>I built and designed a ReactJS web application that visualizes various sorting algorithms.</li>
+                <li>I implemented Bubble Sort, Heap Sort, Merge Sort, and Quick Sort, with plans to add further sorting algorithms.</li>
+            </ul>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML/CSS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;ReactJS</div>
+            </div>
+            <button class="btn_one" onclick="window.location.href='index.html';">try it</button>
+            <button class="btn_one">see the code</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <p>
+                    hi. i'm qasim. i am a software developer from Birmingham, UK.
+                </p>
+                <p>
+                    BSc in Computer Science @<a href="https://birmingham.ac.uk">The University of Birmingham</a>
+                    (pending july 2020)
+                </p>
+                <p>
+                    previously @<a href="https://capgemini.com">Capgemini</a>
+                </p>
+            </section>
+            <section>
+                <h2>languages</h2>
+                <table>
+                    <p>
+                        i am proficient in:
+                    </p>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-java fa-3x"></i><br><br>Java</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-python fa-3x"></i><br><br>Python</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-js-square fa-3x"></i><br><br>JavaScript</td>
+                    </tr>
+                </table>
+                <table>
+                    <p>
+                        and have experience with:
+                    </p>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/cplus.png" alt="C++ Logo" width="42" height="45"><br><br>C/C++</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/sql.png" alt="SQL Logo" width="42" height="45"><br><br>SQL</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-swift fa-3x"></i><br><br>Swift</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/ocaml.png" alt="OCaml Logo" width="42" height="45"><br><br>OCaml</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/matlab.png" alt="MATLAB Logo" width="40" height="40"><br><br>MATLAB</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-html5 fa-3x"></i><br><br>HTML/CSS</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fas fa-terminal fa-3x"></i><br><br>MIPS Assembly</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>technologies</h2>
+                <table>
+                    <p>
+                        i have used, and have experience with:
+                    </p>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-git-square fa-3x"></i><br><br>Git</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fas fa-microchip fa-3x"></i><br><br>Arduino</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-raspberry-pi fa-3x"></i><br><br>Raspberry Pi</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fas fa-robot fa-3x"></i><br><br>Robotics</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fas fa-users fa-3x"></i><br><br>Agile</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fas fa-fire fa-3x"></i><br><br>PyTorch</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/keras.png" alt="Keras Logo" width="45" height="45"><br><br>Keras</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/tensorflow.png" alt="Tensorflow Logo" width="45" height="45"><br><br>TensorFlow</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fas fa-paw fa-3x"></i><br><br>Pandas</td>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><img src="images/numpy.png" alt="Numpy Logo" width="45" height="45"><br><br>NumPy</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <p>
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/17jjos0UFcsus2wzgLr3JEzZL7SOBPqLE9XwUWv1oTHU/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                        <input type="text" name="entry.353898823" id="entry.353898823" placeholder="name" required>
+                        <input type="email" name="entry.710593648" id="entry.710593648" placeholder="email" required><br>
+                        <textarea name="entry.1997677886" id="entry.1997677886" placeholder="your message" required rows="11"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+					<script type="text/javascript">var submitted=false;</script>
+					<script type="text/javascript">
+					$('#gform').on('submit', function(e) {
+  						$('#gform *').fadeOut(0);
+  						$('#gform').prepend('your submission has been processed...');
+  					});
+					</script> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made with <b>&hearts;</b> by <a href="https://www.linkedin.com/in/qnawaz/">qasim</a>
+        </div>
+    <script src="scripts.js" type="text/javascript"></script>
+</body>
 </html>
